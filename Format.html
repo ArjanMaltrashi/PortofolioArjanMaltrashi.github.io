@@ -1,0 +1,53 @@
+<form>
+    <h1>Blackstone Bistro|Pizza-on-Demand</h1>
+    <h4>Our 12th wood-fired pizzas are avaiable for delivery.Build your custom pizza and we'll deliver it within an hour</h4>
+<fieldset>
+   <legend>Your information</legend>
+   <ul>
+    <li><label>Name : <input type ="text" name = "name"></label></li>
+    <li><label>Adress : <input type ="text" name = "adress"></label></li>
+    <li><label>Telephone Number : <input type ="text" name = "telephone number"></label></li>
+    <li><label>Email : <input type ="text" name = "email"></label></li>
+    </ul>
+    <label> Delivery Instruction </label><br>
+    <textarea maxlength="400" name="" id="" cols="100" rows="5" placeholder="No more than 400 characters long"></textarea>
+</fieldset>
+<h2>Design your dream Pizza :</h2>
+<fieldset>
+<legend>Pizza specs </legend>
+<fieldset>
+    <legends>Crust(Chosse one):</legends>
+    <ul>
+        <li><label>Classic white<input type ="radio"name="list" value="yes" ></label></li>
+        <li><label>MultiGrain<input type ="radio"name="list" value="no" ></label></li>
+        <li><label>Cheese-stuffed crust<input type ="radio"name="list" value="no" ></label></li>
+        <li><label>Gluten-free<input type ="radio"name="list" value="no" ></label></li>
+    </ul>
+</fieldset>
+  <fieldset>
+  <legend>Toppings(Choose as many as you want)</legend>
+  <ul>
+    <li><input type = "checkbox" name = "topping" value = "Red sauce" checked > Red sauce</li>
+    <li><input type = "checkbox" name = "topping" value = "White Sauce" > White sauce</li>
+    <li><input type = "checkbox" name = "topping" value = "Mozzarela cheese"> Mozzarela cheese</li>
+    <li><input type = "checkbox" name = "topping" value = "Pepperoni">Pepperoni</li>
+    <li><input type = "checkbox" name = "topping" value = "Mushrooms">Mushrooms</li>
+    <li><input type = "checkbox" name = "topping" value = "Peppers">Peppers</li>
+    <li><input type = "checkbox" name = "topping" value = "Anchovies">Anchovies</li>
+  </ul>
+</fieldset>
+<fieldset>
+    <legend>Number</legend>
+    <p> How many Pizzas : <input type = "text" list = "pizzas"name = "numberofpizzas>">
+    <datalist id = "pizzas">
+        <option value = "1">
+        <option value = "2">
+        <option value = "3">
+         <option value = "4">
+         <option value = "5">
+         <option value = "6">
+        </datalist>
+</fieldset>
+</fieldset>
+<p><input type ="submit" value="Bring me a pizza"> <input type = "Reset"></p>
+</form>

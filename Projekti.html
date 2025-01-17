@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portofolio</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="projectstyle.css">
+    </head>
+    <body>
+          <header>
+            <nav class ="navbar">
+                <a class ="logo" href="#home"> Portofolio </a>
+                <ul  class="nav-links">
+                    <li><a href="#home">Home</a> </li>
+                    <li><a href="#about">About me</a> </li>
+                    <li><a href="#projects">Projects</a> </li>
+                    <li><a href="#education">Education</a> </li>
+                    <li><a href="contact">Contact</a> </li>
+                    <li><a href="#blog">Blog</a> </li>
+                    </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="home">
+                <div class="home-content">
+                    <h1>Hello, I'm Arjan Maltrashi</h1>
+                    <p>A dedicated student with a passion for programming. My goal is to continuously learn and grow as a developer, eventually becoming a skilled professional in the field. I’m excited about exploring new technologies and turning ideas into impactful solutions!</p>
+                </div>
+            </section>            
+            <section id="about">
+                <div class="about-content">
+                    <h1>About me</h1>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/arjan-maltrashi-4ab53a346/" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+                        <a href="https://github.com/ArjanMaltrashi?tab=repositories" target="_blank" class="social-icon">
+                            <i class="fab fa-github fa-2x"></i>
+                        </a>
+                        <a href="ArjanMaltrashiCV.pdf" download="Arjan_Maltrashi_CV.pdf">
+                            <button class="cv-button">Download CV</button>
+                        </a>
+                    </div>
+                </div>
+            </section>            
+            <section id="projects">
+                <div class="projects-content">
+                    <h1>Projects</h1>
+                    <ul class="project-links">
+                        <li><a href="Format.html" target="_blank">Format Project</a></li>
+                        <li><a href="CLASSWORK.HTML" target="_blank">Classwork Project</a></li>
+                        </ul>
+                </div>
+            </section>            
+            <section id="education">
+                <h1>Education</h1>
+                <div class="education-content">
+                    <div class="education-item">
+                        <h2>Bachelor's Degree in Computer Science</h2>
+                        <p><strong>Kolegji Universitar Beder</strong><br>2023 - 2026</p>
+                        <p>Focused on software development, algorithms, and data structures.</p>
+                    </div>
+                </div>
+            </section>                        
+            <section id="contact">
+                <h1>Contact</h1>
+                <div class="contact-content">
+                    <p>You can reach me via email:</p>
+                    <button id="email-button">Click to Email</button>
+                </div>
+            </section>
+            <script>
+                document.getElementById('email-button').addEventListener('click', function() {
+                    window.location.href = 'mailto:amaltrashi23@beder.edu.al';
+                });
+            </script>            
+            <section id="blog">
+                <div class="blog-content">
+                    <h1>Blog</h1>
+                    <ul class="blog-list">
+                        <li>
+                            <h2>Why I Love Coding</h2>
+                            <p>Published on: Dec 20, 2024</p>
+                            <p>Coding allows me to create and bring my ideas to life. It’s a powerful tool for problem-solving and innovation. Through coding, I can design solutions to real-world challenges, automate tasks, and develop applications that impact others positively. It's not just about writing code—it's about creativity, critical thinking, and continuous learning in an ever-evolving field. Every new project is an opportunity to grow and explore new technologies. This journey fuels my passion and motivates me to keep improving</p>
+                        </li>
+                        <li>
+                            <h2>How I Built My Portfolio</h2>
+                            <p>Published on: Jan 2, 2025</p>
+                            <p>Creating this portfolio was a journey of learning and discovery. It allowed me to refine my skills, explore new design concepts, and understand the importance of presenting ideas effectively. Every step, from planning the layout to implementing the functionality, taught me something valuable about creativity and problem-solving.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>                      
+        </main>
+    </body>
+</html>
+
