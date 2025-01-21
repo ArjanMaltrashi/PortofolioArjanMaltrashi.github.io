@@ -277,6 +277,7 @@ section {
     color: #ffffff;
     text-align: center;
     position: relative; 
+    background-image: url('elevated-view-laptop-earphones-crumpled-papers-pencil-blank-spiral-notepad-frame-black-background_23-2148080331.avif'); 
     background-size: cover;
     background-position: center;
 }
@@ -386,6 +387,7 @@ section p {
     }
 
     body {
+        background-image: url('elevated-view-laptop-earphones-crumpled-papers-pencil-blank-spiral-notepad-frame-black-background_23-2148080331.avif');
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
