@@ -1,4 +1,4 @@
-/* Project Style */
+/* Project Style*/
 * {
     margin: 0;
     padding: 0;
@@ -60,6 +60,7 @@ section {
     padding: 50px 20px;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -100,31 +101,81 @@ section p {
     line-height: 1.6;
 }
 
-/* Home Section */
-#home {
-    background-color: rgba(0, 0, 0, 0.5);
+/* About Me Section */
+#about {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px; /* Space between About Me and next section */
 }
 
-.home-content h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+/* Education Section */
+#education {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px; /* Space between Education and Contact */
 }
 
-.home-content p {
-    font-size: 1.2rem;
+/* Contact Section */
+#contact {
+    background-color: rgba(255, 255, 255, 0.2); /* Light transparent background */
+    color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
 }
 
-/* Blog Section */
-#blog,
+/* Flexbox to Stack Sections */
 #about,
 #education,
 #contact {
-    padding: 50px 20px;
-    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
+/* Buttons and Links */
+.cv-button {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cv-button:hover {
+    background-color: #005bb5;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #0073e6;
+}
+
+/* Blog Section */
 #blog .blog-content,
 .about-content,
 .education-content,
@@ -154,84 +205,6 @@ section p {
     font-size: 1.2rem;
     line-height: 1.6;
     color: #dcdcdc;
-}
-
-/* Buttons */
-.cv-button,
-#email-button {
-    background-color: #0073e6;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
-}
-
-.cv-button:hover,
-#email-button:hover {
-    background-color: #005bb5;
-}
-
-/* Social Icons */
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-}
-
-.social-icons a {
-    color: #f0f0f0;
-    transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-    color: #0073e6;
-}
-
-/* Projects Section */
-#projects li {
-    background-color: #f4f4f4;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-#projects li:hover {
-    transform: translateY(-5px);
-    background-color: #0073e6;
-    color: white;
-}
-
-#projects a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-#projects li:hover a,
-#projects a:hover {
-    background-color: #005bb5;
-    color: white;
-}
-
-/* Education Section */
-.education-item {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 600px;
-}
-
-.education-item h2 {
-    font-size: 1.8rem;
-    color: #0073e6;
 }
 
 /* Media Queries */
